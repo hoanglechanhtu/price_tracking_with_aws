@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws-sam/build/template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/template.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -49,7 +60,7 @@
       <recent name="aws.price.tracking" />
     </key>
   </component>
-  <component name="RunManager" selected="AWS Lambda.[Remote] PullUrlFromPool">
+  <component name="RunManager" selected="AWS Lambda.[Remote] AggregatePrice">
     <configuration name="[Local] PullUrl" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
       <option name="credentialProviderId" value="profile:default" />
       <option name="regionId" value="ap-southeast-1" />
@@ -110,34 +121,12 @@
       </sam>
       <method v="2" />
     </configuration>
-    <configuration name="[Local] PushUrl" type="aws.lambda" factoryName="Local" temporary="true" nameIsGenerated="true">
+    <configuration name="[Remote] AggregatePrice" type="aws.lambda" factoryName="Remote" temporary="true" nameIsGenerated="true">
       <option name="credentialProviderId" value="profile:default" />
       <option name="regionId" value="ap-southeast-1" />
-      <option name="debugHost" value="localhost" />
-      <option name="environmentVariables">
-        <map />
-      </option>
-      <option name="handler" value="tracking.PushUrl" />
-      <option name="image" value="false" />
-      <option name="logicalFunctionName" />
-      <option name="memorySize" value="128" />
-      <option name="pathMappings">
-        <list />
-      </option>
-      <option name="platform" />
-      <option name="runtime" value="java11" />
-      <option name="templateFile" />
-      <option name="timeout" value="300" />
-      <option name="useTemplate" value="false" />
-      <option name="input" value="{}" />
+      <option name="functionName" value="AggregatePrice" />
+      <option name="input" value="{&#10;  &quot;Records&quot;: [&#10;    {&#10;      &quot;messageId&quot;: &quot;19dd0b57-b21e-4ac1-bd88-01bbb068cb78&quot;,&#10;      &quot;receiptHandle&quot;: &quot;MessageReceiptHandle&quot;,&#10;      &quot;body&quot;: &quot;Hello from SQS!&quot;,&#10;      &quot;attributes&quot;: {&#10;        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,&#10;        &quot;SentTimestamp&quot;: &quot;1523232000000&quot;,&#10;        &quot;SenderId&quot;: &quot;123456789012&quot;,&#10;        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1523232000001&quot;&#10;      },&#10;      &quot;messageAttributes&quot;: {},&#10;      &quot;md5OfBody&quot;: &quot;7b270e59b47ff90a553787216d55d91d&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:sqs&quot;,&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:sqs:{region}:123456789012:MyQueue&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;&#10;    }&#10;  ]&#10;}" />
       <option name="inputIsFile" value="false" />
-      <sam>
-        <option name="additionalBuildArgs" value="" />
-        <option name="additionalLocalArgs" value="" />
-        <option name="buildInContainer" value="false" />
-        <option name="dockerNetwork" value="" />
-        <option name="skipImagePull" value="false" />
-      </sam>
       <method v="2" />
     </configuration>
     <configuration name="[Remote] PullUrlFromPool" type="aws.lambda" factoryName="Remote" temporary="true" nameIsGenerated="true">
@@ -158,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="AWS Lambda.[Remote] AggregatePrice" />
         <item itemvalue="AWS Lambda.[Remote] PullUrlFromPool" />
         <item itemvalue="AWS Lambda.[Local] PullUrl" />
         <item itemvalue="AWS Lambda.[Remote] PushUrlToPool" />
         <item itemvalue="AWS Lambda.[Local] PushUrl (1)" />
-        <item itemvalue="AWS Lambda.[Local] PushUrl" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630247173784</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Init commit">
+      <created>1630247231528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630247231528</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

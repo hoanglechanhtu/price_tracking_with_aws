@@ -4,6 +4,6 @@ Resources:
     Properties:
       Timeout: 300
       MemorySize: 128
-      Handler: aws.price.tracking.PullUrl::handleRequest
+      Handler: aws.price.tracking.AggregatePrice::handleRequest
       CodeUri: Function
       Runtime: java11
