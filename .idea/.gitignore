@@ -40,3 +40,4 @@ target
 secrets.yml
 .gradletasknamecache
 .sts4-cache
+~/Projects/aws_java_11/.aws-sam/build/Function/lib/
