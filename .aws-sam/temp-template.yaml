@@ -1,0 +1,9 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 1024
+      Handler: aws.price.tracking.PullUrl
+      CodeUri: /home/tuhlc/Projects/aws_java_11
+      Runtime: java11
