@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Test RDS connection">
-      <change beforePath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" afterDir="false" />
     </list>
@@ -204,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630308670002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Test RDS connection">
+      <created>1630308978492</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1630308978492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,8 +227,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <MESSAGE value="Test RDS connection" />
     <MESSAGE value="Disable useSSL mysql connect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disable useSSL mysql connect" />
+    <MESSAGE value="Test RDS connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test RDS connection" />
   </component>
 </project>
