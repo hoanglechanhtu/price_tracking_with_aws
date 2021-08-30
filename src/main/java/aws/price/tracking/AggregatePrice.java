@@ -17,13 +17,12 @@ public class AggregatePrice implements RequestHandler<SQSEvent, String> {
         logger.log("Invoked JDBCSample.getCurrentTime");
 
         String currentTime = "unavailable";
-
         // Get time from DB server
         try {
-            String url = "jdbc:mysql://price-tracking.chzc0pfh4lgm.ap-southeast-1.rds.amazonaws.com:3306/price_tracking";
+            String url = "jdbc:mysql://price-tracking.chzc0pfh4lgm.ap-southeast-1.rds.amazonaws.com:3306/price_tracking&useSSL=false";
             String username = "admin";
-            String password = "*****!";
-
+            String password = "Lehuuvolong123!";
+            logger.log("Trying to connect");
             Connection conn = DriverManager.getConnection(url, username, password);
             Statement stmt = conn.createStatement();
             ResultSet resultSet = stmt.executeQuery("SELECT NOW()");
