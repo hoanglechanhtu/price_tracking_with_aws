@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Test RDS connection">
+    <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Insert into DB">
+      <change beforePath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" afterDir="false" />
     </list>
@@ -122,7 +123,7 @@
       <option name="credentialProviderId" value="profile:default" />
       <option name="regionId" value="ap-southeast-1" />
       <option name="functionName" value="AggregatePrice" />
-      <option name="input" value="{&#10;  &quot;Records&quot;: [&#10;    {&#10;      &quot;messageId&quot;: &quot;19dd0b57-b21e-4ac1-bd88-01bbb068cb78&quot;,&#10;      &quot;receiptHandle&quot;: &quot;MessageReceiptHandle&quot;,&#10;      &quot;body&quot;: &quot;Hello from SQS!&quot;,&#10;      &quot;attributes&quot;: {&#10;        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,&#10;        &quot;SentTimestamp&quot;: &quot;1523232000000&quot;,&#10;        &quot;SenderId&quot;: &quot;123456789012&quot;,&#10;        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1523232000001&quot;&#10;      },&#10;      &quot;messageAttributes&quot;: {},&#10;      &quot;md5OfBody&quot;: &quot;7b270e59b47ff90a553787216d55d91d&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:sqs&quot;,&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:sqs:{region}:123456789012:MyQueue&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;&#10;    }&#10;  ]&#10;}" />
+      <option name="input" value="{&#10;  &quot;Records&quot;: [&#10;    {&#10;      &quot;messageId&quot;: &quot;19dd0b57-b21e-4ac1-bd88-01bbb068cb78&quot;,&#10;      &quot;receiptHandle&quot;: &quot;MessageReceiptHandle&quot;,&#10;      &quot;body&quot;: &quot;{\n  \&quot;url\&quot;: \&quot;https://www.thegioididong.com/dtdd/xiaomi-mi-12\&quot;,\n  \&quot;price\&quot;: 16990000,\n  \&quot;date\&quot;: 1630252187569\n}&quot;,&#10;      &quot;attributes&quot;: {&#10;        &quot;ApproximateReceiveCount&quot;: &quot;1&quot;,&#10;        &quot;SentTimestamp&quot;: &quot;1523232000000&quot;,&#10;        &quot;SenderId&quot;: &quot;123456789012&quot;,&#10;        &quot;ApproximateFirstReceiveTimestamp&quot;: &quot;1523232000001&quot;&#10;      },&#10;      &quot;messageAttributes&quot;: {},&#10;      &quot;md5OfBody&quot;: &quot;7b270e59b47ff90a553787216d55d91d&quot;,&#10;      &quot;eventSource&quot;: &quot;aws:sqs&quot;,&#10;      &quot;eventSourceARN&quot;: &quot;arn:{partition}:sqs:{region}:123456789012:MyQueue&quot;,&#10;      &quot;awsRegion&quot;: &quot;{region}&quot;&#10;    }&#10;  ]&#10;}" />
       <option name="inputIsFile" value="false" />
       <method v="2" />
     </configuration>
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630308978492</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Insert into DB">
+      <created>1630309851817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1630309851817</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +237,7 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Disable useSSL mysql connect" />
     <MESSAGE value="Test RDS connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test RDS connection" />
+    <MESSAGE value="Insert into DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Insert into DB" />
   </component>
 </project>

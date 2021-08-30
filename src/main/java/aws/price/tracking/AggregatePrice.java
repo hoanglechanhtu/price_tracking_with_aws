@@ -28,7 +28,7 @@ public class AggregatePrice implements RequestHandler<SQSEvent, String> {
             String query = "INSERT INTO price_log ("
                     + " url,"
                     + " process_at,"
-                    + " price VALUES ("
+                    + " price) VALUES ("
                     + "?, ?, ?)";
 
             PreparedStatement preparedStatement = conn.prepareStatement(query);
@@ -40,9 +40,8 @@ public class AggregatePrice implements RequestHandler<SQSEvent, String> {
                     preparedStatement.setLong(2, jsonObject.get("date").getAsLong());
                     preparedStatement.setLong(3, jsonObject.get("price").getAsLong());
                     preparedStatement.executeUpdate();
-                    preparedStatement.clearParameters();
                 } catch (SQLException throwables) {
-                    throwables.printStackTrace();
+                    logger.log(throwables.getMessage());
                 }
             });
 
