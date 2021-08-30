@@ -5,5 +5,5 @@ Resources:
       Timeout: 300
       MemorySize: 128
       Handler: aws.price.tracking.AggregatePrice::handleRequest
-      CodeUri: s3://price-tracking-code/123f0ab414cfa39ea3fe14f6aa135aec
+      CodeUri: s3://price-tracking-code/a4b8fbe640e35b2ad32083136f62c9cb
       Runtime: java11

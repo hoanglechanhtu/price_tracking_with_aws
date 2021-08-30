@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" afterDir="false" />
+    <list default="true" id="7d19574b-f031-4144-bdbd-89a842389ce0" name="Default Changelist" comment="Test RDS connection">
       <change beforePath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/packaged-temp-template.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.aws-sam/build/template.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.aws-sam/build/template.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aws/price/tracking/AggregatePrice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,11 +190,39 @@
       <option name="project" value="LOCAL" />
       <updated>1630247231528</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test RDS connection">
+      <created>1630251249756</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1630251249756</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Disable useSSL mysql connect">
+      <created>1630308670002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1630308670002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Test RDS connection" />
+    <MESSAGE value="Disable useSSL mysql connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disable useSSL mysql connect" />
   </component>
 </project>

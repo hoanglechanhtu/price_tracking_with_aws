@@ -19,7 +19,7 @@ public class AggregatePrice implements RequestHandler<SQSEvent, String> {
         String currentTime = "unavailable";
         // Get time from DB server
         try {
-            String url = "jdbc:mysql://price-tracking.chzc0pfh4lgm.ap-southeast-1.rds.amazonaws.com:3306/price_tracking&useSSL=false";
+            String url = "jdbc:mysql://price-tracking.chzc0pfh4lgm.ap-southeast-1.rds.amazonaws.com:3306/price_tracking?useSSL=false";
             String username = "admin";
             String password = "Lehuuvolong123!";
             logger.log("Trying to connect");
